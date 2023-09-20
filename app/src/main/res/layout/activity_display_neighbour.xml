@@ -133,7 +133,8 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:text="@string/about_me"/>
 
             <TextView
                 android:id="@+id/aboutMe"
