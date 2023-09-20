@@ -48,6 +48,7 @@ public class NeighbourServiceTest {
         List<Neighbour> mNeighbours = service.getFavoriteNeighbours();
         assertTrue(mNeighbours.contains(neighbourToAddToFavorite));
         neighbourToAddToFavorite.setFavorite();
-        assertTrue(mNeighbours.contains(neighbourToAddToFavorite));
+        mNeighbours = service.getFavoriteNeighbours();
+        assertFalse(mNeighbours.contains(neighbourToAddToFavorite));
     }
 }
